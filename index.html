@@ -30,7 +30,7 @@
     <h2><u>Motocicletas:</u></h2>
     <h2>🏁 <em>Moto Deportiva</em> </h2><img src="img/kawasaki-zh2-foto01.png" alt="Motocicleta deportiva zh2" width="440" height="390" loading="lazy"> <br> <h2> 🚦 <em>Moto Naked</em> </h2> <img src="img/mt09Sp_gris.png" alt="motocicleta Naked mt09Sp_gris" width="450" height="320" loading="lazy"> <br> <h2> 🏞 <em>Moto Cruiser</em> </h2> <img src="img/Harley-Davidson-Street-750-2019.jpg" alt="Motocicleta Cruiser Harley_Davindson negra" width="480" height="330" loading="lazy"> <h2> 🌄 <em>Moto Enduro</em> </h2> <br> <img src="img/yz450f_azul2023.webp" alt="Motocicleta enduro Yz450f azul" width="480" height="350" loading="lazy"> <br> <h2> 🗺 <em>Moto Adventure</em> </h2> <img src="img/07-bmw-r-1250-gs-adventure-studio.webp" alt="motocicleta adventure bmw-gs1250" width="450" height="330" loading="lazy"> <h2> 🛵 <em>Moto Scooter</em> </h2> <br> <img src="img/xmax_2025_gris.png" alt="Motocicleta Scooter X-Max" width="400" height="300" loading="lazy">
     <!-- <p>Modelos de alto rendimiento para los verdaderos amantes de la velocidad y el poder.</p>-->
-    
+    <hr>
     <table border="1" style="border-collapse: collapse; margin: 0;padding: 0;">
         <tr>
             <th colspan="2"> Encabezado Unificado</th>
@@ -43,12 +43,11 @@
             <tr>
                 <td>Dato 2</td>
                 <td>Dato 2.1</td>
-                <td>Dato 2.2</td>
+                <td rowspan="2">Dato 2.2 <br> Dato 2.2.1</td>
             </tr>
             <tr>
                 <td>Dato 3</td>
                 <td>Dato 3.1</td>
-                <td>Dato 3.2</td>
             </tr>
             <tr>
                 <td>Dato 4</td>
@@ -66,29 +65,78 @@
 
     <table border="1" style="border-collapse: collapse; margin: 0;padding: 0;">
         <tr>
-            <th colspan="2">Nombre/Apellido</th>
-            <th>Edad</th>
-            <th>Comentario</th>
+            <th colspan="2" style="background-color: gray;">Nombre/Apellido</th>
+            <th style="background-color: lightblue;">Edad</th>
+            <th style="background-color: red;">Vehiculo</th>
+            <th style="background-color: lightgreen;">Comentario</th>
         </tr>
         <tr>
             <td>Carlos</td>
             <td>Cordoba</td>
             <td>30</td>
-            <td rowspan="5">Reto <br> cumplido <br> quiero <br> otro mas <br> complejo</td>
+            <td>Yamaha YZF-R3</td>
+            <td rowspan="5">Excelente <br> servicio, <br> muy <br> satisfecho.</td>
         </tr>
         <tr>
             <td>Hayler</td>
-            <td colspan="2">Renteria 18</td>
+            <td>Renteria</td>
+            <td>18</td>
+            <td>Yamaha MT-09</td>
         </tr>
         <tr>
             <td>Luis</td>
             <td>Gonzalez</td>
             <td>28</td>
+            <td>Honda CB500F</td>
         </tr>
         <tr>
             <td>Harold</td>
-            <td colspan="2">Lopez 35</td>
+            <td>Lopez</td>
+            <td>35</td>
+            <td>Harley-Davidson Street 750</td>
         </tr>
     </table>
+    <hr>
+    <form method="get" action="https://www.google.com">
+        <h2>📩 Contáctanos:</h2>
+        <label for="Piloto">Piloto</label>
+        <input type="text" id="Piloto" placeholder="Ingrese su Nombre" required>
+        <br><br>
+        <label for="Edad">Edad</label>
+        <input type="number" id="Edad" placeholder="Ingrese su Edad" min="18" required>
+        <br><br>
+        <label for="Fecha">Fecha de Nacimiento</label>
+        <input type="date" id="Fecha" required>
+        <br><br>
+        <label for="Celular">Celular</label>
+        <input type="tel" id="Celular" placeholder="Ingrese su Número de Celular" pattern="[0-9]{10}" required>
+        <br><br>
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" placeholder="Ingrese su Correo Electrónico" required>
+        <br><br>
+        <label for="archivo">Adjuntar Archivo</label>
+        <input type="file" id="archivo" name="archivo" multiple accept=".jpg,.jpeg,.png" required>
+        <br><br>
+        <label for="revisar">De acuerdo</label>
+        <input type="checkbox" id="revisar" required>
+        <br><br>
+        <label for="aceptar">De acuerdo</label>
+        <input type="radio" id="aceptar" name="aceptar" value="si" required> Sí
+        <input type="radio" id="rechazar" name="aceptar" value="no"> No
+        <br><br>
+        <label for="rango">Rango de Edad</label>
+        <input type="range" id="rango" name="rango" min="18" max="100" required>
+        <br><br>
+        <label for="color">Seleccione un Color</label>
+        <input type="color" id="color" name="color" required>
+        <br><br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su Contraseña" required>
+        <br><br>
+        <input type="datetime-local" id="fechaHora" name="fechaHora" required>
+        <br><br>
+        <input type="submit" value="Enviar" style="background-color: rgb(128, 4, 0); color: white;">
+
+    </form>
 </body>
 </html>
