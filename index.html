@@ -16,11 +16,12 @@
     <hr>
     <h2>🚧 Servicios disponibles:</h2>
     <ol>
-        <li><strong>Venta</strong> de motos</li>
-        <ul>
-        <li>Nuevas</li>
-        <li>Usadas</li>
-    </ul>
+        <li><strong>Venta</strong> de motos
+            <ul>
+                <li>Nuevas</li>
+                <li>Usadas</li>
+            </ul>
+        </li>
         <li><strong>Reparación</strong> y <em>mantenimiento</em> general</li>
         <li><strong>Personalización</strong> y accesorios 🔧</li>
     </ol>
@@ -34,34 +35,33 @@
     <h2>Videos</h2>
     
     <hr>
-    <h2>📊 Comparativa de Modelos:</h2>
     <table border="1" style="border-collapse: collapse; margin: 0;padding: 0;">
         <tr>
             <th colspan="2"> Encabezado Unificado</th>
             <th>Otra columna</th>
-            <tr>
-                <td>Dato 1</td>
-                <td>Dato 1.1</td>
-                <td>Dato 1.2</td>
-            </tr>
-            <tr>
-                <td>Dato 2</td>
-                <td>Dato 2.1</td>
-                <td rowspan="2">Dato 2.2 <br> Dato 2.2.1</td>
-            </tr>
-            <tr>
-                <td>Dato 3</td>
-                <td>Dato 3.1</td>
-            </tr>
-            <tr>
-                <td>Dato 4</td>
-                <td>Dato 4.1</td>
-                <td>Dato 4.2</td>
-            </tr>
-            <tr>
-                <td colspan="2">Dato 5 Dato 5.1</td>
-                <td>Dato 5.2</td>
-            </tr>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 1.1</td>
+            <td>Dato 1.2</td>
+        </tr>
+        <tr>
+            <td>Dato 2</td>
+            <td>Dato 2.1</td>
+            <td rowspan="2">Dato 2.2 <br> Dato 2.2.1</td>
+        </tr>
+        <tr>
+            <td>Dato 3</td>
+            <td>Dato 3.1</td>
+        </tr>
+        <tr>
+            <td>Dato 4</td>
+            <td>Dato 4.1</td>
+            <td>Dato 4.2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Dato 5 Dato 5.1</td>
+            <td>Dato 5.2</td>
         </tr>
     </table>
     <hr>
@@ -79,7 +79,7 @@
             <td>Cordoba</td>
             <td>30</td>
             <td>Yamaha YZF-R3</td>
-            <td rowspan="5">Excelente <br> servicio, <br> muy <br> satisfecho.</td>
+            <td rowspan="4">Excelente <br> servicio, <br> muy <br> satisfecho.</td>
         </tr>
         <tr>
             <td>Hayler</td>
@@ -101,46 +101,79 @@
         </tr>
     </table>
     <hr>
-    <form method="get" action="https://www.google.com">
-        <h2>📩 Contáctanos:</h2>
-        <label for="Piloto">Piloto</label>
-        <input type="text" id="Piloto" placeholder="Ingrese su Nombre" required>
-        <br><br>
-        <label for="Edad">Edad</label>
-        <input type="number" id="Edad" placeholder="Ingrese su Edad" min="18" required>
-        <br><br>
-        <label for="Fecha">Fecha de Nacimiento</label>
-        <input type="date" id="Fecha" required>
-        <br><br>
-        <label for="Celular">Celular</label>
-        <input type="tel" id="Celular" placeholder="Ingrese su Número de Celular" pattern="[0-9]{10}" required>
-        <br><br>
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="Ingrese su Correo Electrónico" required>
-        <br><br>
-        <label for="archivo">Adjuntar Archivo</label>
-        <input type="file" id="archivo" name="archivo" multiple accept=".jpg,.jpeg,.png" required>
-        <br><br>
-        <label for="revisar">De acuerdo</label>
-        <input type="checkbox" id="revisar" required>
-        <br><br>
-        <label for="aceptar">De acuerdo</label>
-        <input type="radio" id="aceptar" name="aceptar" value="si" required> Sí
-        <input type="radio" id="rechazar" name="aceptar" value="no"> No
-        <br><br>
-        <label for="rango">Rango de Edad</label>
-        <input type="range" id="rango" name="rango" min="18" max="100" required>
-        <br><br>
-        <label for="color">Seleccione un Color</label>
-        <input type="color" id="color" name="color" required>
-        <br><br>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su Contraseña" required>
-        <br><br>
-        <input type="datetime-local" id="fechaHora" name="fechaHora" required>
-        <br><br>
-        <input type="submit" value="Enviar" style="background-color: rgb(128, 4, 0); color: white;">
+    <form style="background: aliceblue; padding: 24px; border-radius: 12px; max-width: 600px; margin: 0 auto; box-shadow: rgb(0, 0, 0);">
+        <h2 style="color: #00838f;">📩 Contáctanos para tu próxima aventura en moto:</h2>
+        <label for="Piloto"><b>Piloto</b></label>
+        <input type="text" id="Piloto" placeholder="Nombre del piloto" required style="width: 60%;"><br><br>
 
+        <label for="Edad"><b>Edad</b></label>
+        <input type="number" id="Edad" placeholder="Edad" min="18" required style="width: 60%;"><br><br>
+
+        <label for="Fecha"><b>Fecha de Nacimiento</b></label>
+        <input type="date" id="Fecha" required style="width: 60%;"><br><br>
+
+        <label for="Celular"><b>Celular</b></label>
+        <input type="tel" id="Celular" placeholder="Número de celular" pattern="[0-9]{10}" required style="width: 60%;"><br><br>
+
+        <label for="correo"><b>Correo Electrónico</b></label>
+        <input type="email" id="correo" placeholder="Correo electrónico" required style="width: 60%;"><br><br>
+
+        <label for="archivo"><b>Adjunta foto de tu moto</b></label>
+        <input type="file" id="archivo" name="archivo" multiple accept=".jpg,.jpeg,.png" required><br><br>
+
+        <label for="revisar"><b>Acepto términos y condiciones</b></label>
+        <input type="checkbox" id="revisar" required><br><br>
+
+        <label><b>¿Quieres recibir novedades de MOTOX?</b></label>
+        <input type="radio" id="aceptar" name="aceptar" value="si" required> Sí
+        <input type="radio" id="rechazar" name="aceptar" value="no"> No<br><br>
+
+        <label for="rango"><b>Rango de Edad</b></label>
+        <input type="range" id="rango" name="rango" min="18" max="100"><br><br>
+
+        <label for="color"><b>Color favorito de moto</b></label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="contraseña"><b>Contraseña para tu cuenta MOTOX</b></label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña segura" required style="width: 60%;"><br><br>
+
+        <label for="fechaHora"><b>¿Cuándo quieres tu cita?</b></label>
+        <input type="datetime-local" id="fechaHora" name="fechaHora" required style="width: 60%;"><br><br>
+
+        <label for="conversacion"><b>¿Qué servicio buscas o comentario?</b></label><br>
+        <textarea id="conversacion" name="conversacion" spellcheck="true" rows="4" cols="50" placeholder="Cuéntanos tu necesidad, modelo de moto, etc." maxlength="300" style="width: 90%;" required></textarea>
+        <br><br> 
+        <label for="pais"><b>País:</b></label>
+        <select id="pais" name="pais" required style="width: 25%;">
+            <option value="" disabled selected>Tu país</option>
+            <option value="Colombia">Colombia</option>
+            <option value="México">México</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Perú">Perú</option>
+        </select>
+        <br><br>
+        <label for="ciudad"><b>Ciudad:</b></label>
+        <input list="ciudades" id="ciudad" name="ciudad" placeholder="Tu ciudad" style="width: 25%;" required>
+        <datalist id="ciudades">
+            <option value="Bogotá"></option>
+            <option value="Medellín"></option>
+            <option value="Cali"></option>
+            <option value="Barranquilla"></option>
+            <option value="Cartagena"></option>
+            <option value="Bucaramanga"></option>
+            <option value="Pereira"></option>
+            <option value="Santa Marta"></option>
+            <option value="Quibdó"></option>
+        </datalist>
+        <br><br>
+        <input type="submit" value="Enviar" style="background-color: cadetblue; color: white; font-weight: bold; padding: 10px 24px; border: none; border-radius: 6px; cursor: pointer;">
     </form>
+    <hr>
+<footer style="text-align: center; padding: 20px; background-color: #00838f; color: white;">
+    <p>© 2025 MOTOX. Todos los derechos reservados.</p>
+    <p>Desarrollado por Hayler Renteria</p>
+</footer>
 </body>
 </html>
