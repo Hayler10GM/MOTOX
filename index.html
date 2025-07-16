@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="img/M.png" alt="logo-motox" width="400" height="300">
+        <img src="img/M.png" alt="logo-motox" width="400" height="300" class="logo">
         <h1>🔥Bienvenido a <strong>MOTOX</strong>🏍️</h1>
         <p>Tu destino para todo lo relacionado con motocicletas</p>
         <nav>
@@ -19,24 +19,31 @@
             <a href="#comentarios-clientes">Comentarios</a>
             <a href="#contactanos">Contacto</a>
             <a href="#preguntas-frecuentes">FAQ</a>
+            <a href="#agradecimiento">Agradecimientos</a>
+            <a href="#redes-sociales">Redes Sociales</a>
         </nav>
     </header>
 
     <hr>
-    <p>Tu <em>taller</em> y <em>tienda</em> de confianza para <strong>motocicletas</strong>.</p>
+    <p class="Tu1">Tu <em>taller</em> y <em>tienda</em> de confianza para <strong>motocicletas</strong>.</p>
     <hr>
 
     <div id="servicios-disponibles">
         <h2>🚧 Servicios disponibles:</h2>
         <ol>
-            <li><strong>Venta</strong> de motos
-            <ul>
-                <li> Nuevas</li>
-                <li> Usadas</li>
-            </ul>
+            <li>
+                <strong>Venta</strong> de motos
+                <ul>
+                    <li>Nuevas</li>
+                    <li>Usadas</li>
+                </ul>
             </li>
-            <li><strong>Reparación</strong> y <em>mantenimiento</em> general</li>
-            <li><strong>Personalización</strong> y accesorios 🔧</li>
+            <li>
+                <strong>Reparación</strong> y <em>mantenimiento</em> general
+            </li>
+            <li>
+                <strong>Personalización</strong> y accesorios 🔧
+            </li>
         </ol>
     </div>
 
@@ -138,39 +145,40 @@
 
 <hr>
 
-<form id="contactanos">
-    <h2>📩 Contáctanos para tu próxima aventura en moto:</h2>
+<details id="contactanos">
+
+    <summary>📩 Contáctanos para tu próxima aventura en moto:</summary>
 
     <fieldset>
         <legend>Información Personal del Piloto</legend>
 
         <label for="Nombre">Nombre Completo</label>
-        <input type="text" id="Nombre" placeholder="Nombre completo" required pattern="[A-Za-z\s]{3,50}" title="Debe tener entre 3 - 30 caracteres">
+        <input type="text" id="Nombre" placeholder="Nombre completo" required pattern="[A-Za-z\s]{3,50}" title="Debe tener entre 3 - 30 caracteres"><br>
 
         <label for="usuario">Nombre Usuario</label>
-        <input type="text" name="usuario" id="usuario" required pattern="[A-Za-z0-9]{5,10}" placeholder="Nombre de Usuario" title="Debe tener entre 5 y 10 caracteres.">
+        <input type="text" name="usuario" id="usuario" required pattern="[A-Za-z0-9]{5,10}" placeholder="Nombre de Usuario" title="Debe tener entre 5 y 10 caracteres."><br>
 
         <label for="Edad">Edad</label>
-        <input type="number" id="Edad" placeholder="Edad" min="18" required max="65">
+        <input type="number" id="Edad" placeholder="Edad" min="18" required max="65"><br>
 
         <label for="rango">Rango de Edad</label>
-        <input type="range" id="rango" name="rango" min="18" max="100">
+        <input type="range" id="rango" name="rango" min="18" max="100"><br>
 
         <label for="Fecha">Fecha de Nacimiento</label>
-        <input type="date" id="Fecha" required>
+        <input type="date" id="Fecha" required><br>
 
         <label for="Celular">Celular</label>
-        <input type="tel" id="Celular" placeholder="Número de celular" pattern="[0-9]{10}" required title="Debe tener 10 dígitos">
+        <input type="tel" id="Celular" placeholder="Número de celular" pattern="[0-9]{10}" required title="Debe tener 10 dígitos"><br>
     </fieldset>
 
     <fieldset>
         <legend>Información de la Cuenta</legend>
 
         <label for="correo">Correo Electrónico</label>
-        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required><br>
 
         <label for="contraseña">Contraseña para tu cuenta MOTOX</label>
-        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña segura" required>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña segura" required><br>
 
         <label for="pin">Pin para tu cuenta MOTOX</label>
         <input type="password" id="pin" name="pin" placeholder="Pin de 4 dígitos" required pattern="[0-9]{4}" title="Debe tener 4 dígitos">
@@ -199,12 +207,12 @@
     <input type="color" id="color" name="color">
 
     <label for="fechaHora">¿Cuándo quieres tu cita?</label>
-    <input type="datetime-local" id="fechaHora" name="fechaHora" required>
+    <input type="datetime-local" id="fechaHora" name="fechaHora" required><br>
 
-    <label for="conversacion">¿Qué servicio buscas o comentario?</label>
+    <label for="conversacion">¿Qué servicio buscas o comentario?</label><br>
     <textarea id="conversacion" name="conversacion" spellcheck="true" rows="4" cols="50" placeholder="Cuéntanos tu necesidad, modelo de moto, etc." maxlength="300" required></textarea>
 
-    <label for="pais">País:</label>
+    <label for="pais">País:</label> <br>
     <select id="pais" name="pais" required>
         <option value="" disabled selected>Tu país</option>
         <option value="Colombia">Colombia</option>
@@ -216,6 +224,7 @@
     </select>
 
     <label for="ciudad">Ciudad:</label>
+    <br>
     <input list="ciudades" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
     <datalist id="ciudades">
         <option value="Bogotá" label="Colombia">Bogotá</option>
@@ -237,12 +246,12 @@
     <label for="revisar">Acepto términos y condiciones</label>
     <input type="checkbox" id="revisar" required>
 
-    <label>¿Quieres recibir novedades de MOTOX?</label>
+    <label>¿Quieress recibir novedades de MOTOX?</label>
     <input type="radio" id="aceptar" name="aceptar" value="si" required> Sí
     <input type="radio" id="rechazar" name="aceptar" value="no"> No
 
-    <input type="submit" value="Enviar">
-</form>
+    <button type="submit" class="boton" value="Enviar">Enviar</button>
+</details>
 
 <hr>
 
@@ -286,14 +295,21 @@
 <div id="redes-sociales">
     <h2>Síguenos en nuestras redes sociales:</h2>
     <ul>
-        <li><a href="https://www.facebook.com/motox" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/motox" target="_blank">Instagram</a></li>
-        <li><a href="https://www.twitter.com/motox" target="_blank">Twitter</a></li>
-        <li><a href="https://www.youtube.com/motox" target="_blank">YouTube</a></li>
+        <li class="Facebook"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li class="Instagram"><a href="https://www.instagram.com/motox" target="_blank">Instagram</a></li>
+        <li class="X"><a href="https://x.com/?lang=es" target="_blank">X</a></li>
+        <li class="Youtube"><a href="https://www.youtube.com/motox" target="_blank">YouTube</a></li>
     </ul>
 </div>
 
 <hr>
+
+<div class="flex-container">
+  <div class="item">Caja 1</div>
+  <div class="item">Caja 2</div>
+  <div class="item">Caja 3</div>
+</div>
+
 
 <footer>
     <p>&copy; 2025 MOTOX. Todos los derechos reservados.</p>
